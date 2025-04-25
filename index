@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSol Mist - Water from Air</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B9EFF',
+                        dark: '#1F2238',
+                        darker: '#151828',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #151828;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-darker text-white">
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-darker z-50 border-b border-gray-800">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-primary text-2xl font-bold">AquaSol Mist</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#how-it-works" class="hover:text-primary transition">How It Works</a>
+                <a href="#benefits" class="hover:text-primary transition">Benefits</a>
+                <a href="#features" class="hover:text-primary transition">Features</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-20 bg-dark">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-5xl font-bold mb-4 text-primary">AquaSol Mist</h1>
+                <h2 class="text-2xl mb-6">"Harvesting the Sky, Powered by Sun."</h2>
+                <p class="text-gray-300 mb-8">The Portable Water-from-Air Bottle uses innovative Atmospheric Water Generation (AWG) technology to extract drinking water directly from ambient air wherever you are.</p>
+                <div class="flex space-x-4">
+                    <a href="#how-it-works" class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition">Learn More</a>
+                    <a href="#contact" class="border border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-6 rounded-lg transition">Pre-Order</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="./AquaSol.png" alt="AquaSol Mist Bottle" class="rounded-lg shadow-2xl h-96 object-cover"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-darker">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center text-primary">How the Bottle Generates Water from Air</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="bg-dark p-6 rounded-lg transition-transform hover:scale-105">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4">1</div>
+                    <h3 class="text-xl font-bold mb-2">Air Intake & Filtration</h3>
+                    <p class="text-gray-300">A low-power fan draws in air, which passes through a mesh filter that blocks dust and pollen.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-dark p-6 rounded-lg transition-transform hover:scale-105">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4">2</div>
+                    <h3 class="text-xl font-bold mb-2">Condensation via Thermoelectric Cooling</h3>
+                    <p class="text-gray-300">Peltier coolers chill a metal surface below dew point, causing atmospheric moisture to condense like morning dew.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-dark p-6 rounded-lg transition-transform hover:scale-105">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4">3</div>
+                    <h3 class="text-xl font-bold mb-2">Collection & Purification</h3>
+                    <p class="text-gray-300">Water droplets collect in an internal tank and go through carbon filters and UV-C light for safe, mineralized drinking water.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-dark p-6 rounded-lg transition-transform hover:scale-105">
+                    <div class="bg-primary w-12 h-12 rounded-full flex items-center justify-center text-2xl font-bold mb-4">4</div>
+                    <h3 class="text-xl font-bold mb-2">Power & Smart Monitoring</h3>
+                    <p class="text-gray-300">Solar panels charge a battery that powers the system, with backup USB charging and optional smart alerts for maintenance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center text-primary">Affordability and Long-Term Value</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Benefit 1 -->
+                <div class="bg-darker p-6 rounded-lg border border-gray-800 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-4">Cost vs Bottled Water</h3>
+                    <p class="text-gray-300">Eliminates ongoing bottled water expenses, saving customers money over time.</p>
+                </div>
+                
+                <!-- Benefit 2 -->
+                <div class="bg-darker p-6 rounded-lg border border-gray-800 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-4">Mass Production Benefits</h3>
+                    <p class="text-gray-300">Scalable manufacturing will reduce unit costs significantly, making it accessible to wider audiences.</p>
+                </div>
+                
+                <!-- Benefit 3 -->
+                <div class="bg-darker p-6 rounded-lg border border-gray-800 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-4">Durability & Maintenance</h3>
+                    <p class="text-gray-300">Replaceable filters last 3-6 months, with smart alerts to optimize upkeep.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="bg-darker p-6 rounded-lg border border-gray-800 hover:border-primary transition">
+                    <h3 class="text-xl font-bold mb-4">Energy Efficiency</h3>
+                    <p class="text-gray-300">Low power consumption means reduced electric costs, even with backup USB charging options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-darker">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-16 text-center text-primary">Robustness, Maintenance & Environmental Impact</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Feature 1 -->
+                <div class="bg-dark p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Durability</h3>
+                    <p class="text-gray-300 mb-4">IP-rated against dust and water, designed to resist travel bumps and impacts.</p>
+                    <p class="text-gray-300">Modular parts make repairs straightforward and cost-effective.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-dark p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Filter Management</h3>
+                    <p class="text-gray-300">Replaceable filters last several months and include smart reminders for user convenience.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-dark p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Eco-Friendly Materials</h3>
+                    <p class="text-gray-300 mb-4">Made with recyclable plastics and metals to minimize environmental footprint.</p>
+                    <p class="text-gray-300">Overall, reduces bottled water waste significantly.</p>
+                </div>
+            </div>
+
+            <h2 class="text-4xl font-bold mb-16 text-center text-primary">Additional Features</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Additional Feature 1 -->
+                <div class="bg-dark p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">MistConnect App</h3>
+                    <p class="text-gray-300">Tracks water production, solar efficiency, and sends oddly personalized notifications.</p>
+                </div>
+                
+                <!-- Additional Feature 2 -->
+                <div class="bg-dark p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">MistFilter Plus</h3>
+                    <p class="text-gray-300">Premium filtration system that adds minerals while removing impurities, with settings like "Mountain Spring," "Tropical Rainforest".</p>
+                </div>
+                
+                <!-- Additional Feature 3 -->
+                <div class="bg-dark p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Subscription Water Analysis</h3>
+                    <p class="text-gray-300">Monthly detailed reports of your water quality with unnecessarily dramatic statistics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+  
+    <!-- Footer -->
+    <footer class="bg-darker py-8 border-t border-gray-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <a href="#" class="text-primary text-xl font-bold">AquaSol Mist</a>
+                    <p class="text-gray-400">© 2025 AquaSol Technologies. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-primary">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-primary">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
